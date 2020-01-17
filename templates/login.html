@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Travel Map</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+<link rel="stylesheet" href="static/header_footer_style.css" type="text/css">
+
+<body>
+<div class="login_container">
+        <form id="login-form " action="/login"  method="POST">
+                <div class="title_login title">Instagram</div>
+                <label class="gray">
+                  <span ><input name="email" type="text"  placeholder="Enter Username" required /></span>
+                </label>
+                <label class="gray">
+                  <span><input name="password" type="password"  placeholder="Enter Password" required/></span>
+                </label>
+                
+
+                <label class="bluebutton">
+                        <span>
+                  <input type="submit" name="login-button" id="login-button" value="Log in" />
+                </span>
+                </label>
+            </form>
+</div>
+    
+<div class="bottomnavbar">
+        <a id="btn_home"><i class="fas fa-home"></i></a>
+        <a  id="btn_search"><i class="fas fa-search"></i></a>
+        <a  id="btn_square"><i class="fas fa-plus-square"></i></a>
+        <a  id="btn_video"><i class="fas fa-video"></i></a>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="static/navbar.js"></script>
+
+
+    <script>
+      var idvar = '{{login}}';
+
+      if (idvar == 0)
+      {
+          alert("Password or user name is wrong");
+      }
+
+    </script>
+</body>
+
+</html>
